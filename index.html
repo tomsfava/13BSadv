@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantopedia</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        .img-container {
+            height: 65vh;
+            overflow: hidden;
+        }
+        .img-container img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+        }
+        section {
+            padding-top: 8vh;
+        }
+        
+        section h2 {
+            padding-bottom: 2vh;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            z-index: 1000;
+        }
+
+        .card img {
+            height: 30vh;
+            object-fit: cover;
+        }
+
+        .btn-primary {
+            color: black;
+        }
+
+        .card {
+            height: 500px;
+            background-color: #ccc;
+            margin-bottom: 2vh;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="navbar navbar-expand-md navbar-expand-lg">
+            <div class="container">
+                <h1>Plantopedia</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav id="menu" class="collapse navbar-collapse justify-content-end">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#calma">Calmantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#antinf">Anti-Inflamatorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#imuno">Imuno-Estimulantes</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#header">
+        <section id="inicio">
+            <div class="container">
+                <h2>Conheça o mundo das plantas medicinais</h2>
+                <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="2500" class="carousel-item active">
+                            <div class="img-container">
+                                <img class="d-block w-100" src="./img/erva-cidreira.jpeg">
+                            </div>
+                            <div class="carousel-caption">
+                                <h2>Erva Cidreira</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="2500" class="carousel-item">
+                            <div class="img-container">
+                                <img class="d-block w-100" src="./img/cannabis.jpg">
+                            </div>
+                            <div class="carousel-caption">
+                                <h2>Cannabis Sativa</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="2500" class="carousel-item">
+                            <div class="img-container">
+                                <img class="d-block w-100" src="./img/baleeira.webp">
+                            </div>
+                            <div class="carousel-caption">
+                                <h2>Erva Baleeira</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="calma">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9">
+                        <h2>Calmantes</h2>
+                    </div>
+                    <div class="col-3 text-end">
+                        <button class="btn btn-primary">Ver todas</button>
+                    </div>
+                </div>
+                <div class="row d-flex">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Folha de Maracujá</h4>
+                            </div>
+                            <img src="./img/maracuja.jpeg" alt="folhas de maracuja">
+                            <div class="card-body">
+                                Um excelente chá para acalmar é o chá feito com folhas de maracujá, pois o maracujá possui propriedades calmantes, reduzindo também a sensação de ansiedade, podendo ser tomado mesmo durante a gravidez. Este chá é ótimo para quem sofre de ansiedade, estresse ou insônia, pois ajuda a acalmar e a relaxar o corpo.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Rosmaninho</h4>
+                            </div>
+                            <img src="./img/rosmaninho.webp" alt="rosmaninho">
+                            <div class="card-body">
+                                A planta que é conhecida também como chá de pedestre, é nativa e endêmica da região da Serra do Espinhaço, em MG, e foi estudada no Laboratório de Fitoterapia da UFMG. Ela era usada pelos tropeiros na época do Império para aliviar as dores. E ainda hoje é muito utilizada para problemas de insônia e até mesmo ansiedade.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Camomila</h4>
+                            </div>
+                            <img src="./img/camomila.webp" alt="camomila">
+                            <div class="card-body">
+                                Um clássico entre os calmantes, a camomila é muito comum nas casas brasileiras e é amplamente utilizada como calmante, estimulante do sono e algumas vezes como remédio para dor de cabeça.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="antinf">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9">
+                        <h2>Anti-Inflamatórias</h2>
+                    </div>
+                    <div class="col-3 text-end">
+                        <button class="btn btn-primary">Ver todas</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Cúrcuma</h4>
+                            </div>
+                            <img src="./img/curcuma.webp" alt="curcuma">
+                            <div class="card-body">
+                                Também conhecido como açafrão-da-terra, a cúrcuma é um poderoso anti-inflamatório, com ação anti-microbiana, anti-neoplásica e antioxidadente, parente do gengibre, pode ser consumida em chás, como tempero e também pode ser passada na pele.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Romã</h4>
+                            </div>
+                            <img src="./img/romã.jpg" alt="romã">
+                            <div class="card-body">
+                                A romã tem compostos antioxidantes que reduzem a resposta inflamatória, Além disso os flavonoides presentes na planta podem ajudar a manter a saúde das artérias, reduzir o colesterol e prevenir ataques cardíacos, além de retardar o envelhecimento. Já em relação às atividades cerebrais, a fruta também melhora as funções cognitivas podendo ajudar a prevenir a doença de Alzheimer.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Arnica</h4>
+                            </div>
+                            <img src="./img/Arnica.jpg" alt="Arnica">
+                            <div class="card-body">
+                                Muito utilizada na homeopatia e na fitoterapia, a arnica possui propriedades anti-inflamatórias, analgésicas e cicatrizantes, tornando-a uma opção valiosa para o tratamento de lesões e dores musculares.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="imuno">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9">
+                        <h2>Imunoestimulantes</h2>
+                    </div>
+                    <div class="col-3 text-end">
+                        <button class="btn btn-primary">Ver todas</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Gengibre</h4>
+                            </div>
+                            <img src="./img/gengibre.jpg" alt="gengibre">
+                            <div class="card-body">
+                                Este alimento, muito valoroso na gastronomia como condimento e no preparo de chás, tem um intenso poder fitoterápico. O gengibre ameniza náuseas, incrementa a energia e amplia a imunidade. Além disso, ele é prescrito contra a dor de barriga, a cólica, a artrite, enxaquecas e diversas outras enfermidades.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Hibisco</h4>
+                            </div>
+                            <img src="./img/hibisco.webp" alt="hibisco">
+                            <div class="card-body">
+                                Cardioprotetor, vasodilatador e regulador do colesterol graças aos flavonoides presentes no chá; Regula o intestino: o chá possui compostos com efeito estimulante sobre o intestino, facilitando a passagem e eliminação do bolo fecal; Tem ação termogênica.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Echinacea</h4>
+                            </div>
+                            <img src="./img/echinacea.jpg" alt="echinacea">
+                            <div class="card-body">
+                                A equinácea é rica em alcamidas, polissacarídeos, glicoproteínas e derivados do ácido caféico, com ação anti-inflamatória e imunomoduladora, que ajudam a fortalecer o sistema imunológico, prevenindo e ajudando no combate de infecções do sistema respiratório, como gripes, resfriados, sinusite ou otite, por exemplo.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
